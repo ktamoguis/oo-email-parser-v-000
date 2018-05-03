@@ -16,7 +16,7 @@ class EmailParser
       end
     end
     @newarray
-    
+
   end
 
   def parse

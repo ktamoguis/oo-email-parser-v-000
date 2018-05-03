@@ -24,9 +24,11 @@ class EmailParser
     @newarray
   end
 
-binding.pry
+
 
 end
+
+binding.pry
 
 emails = "avi@test.com, arel@test.com"
 

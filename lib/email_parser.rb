@@ -19,11 +19,12 @@ class EmailParser
 
   def removeduplicate(emails)
     newarray = []
-    emails.map do |addresses| 
+    emails.map do |addresses|
       if newarray.include?(addresses)
         newarray << addresses
       end
     end
+    newarray
   end
 
 end

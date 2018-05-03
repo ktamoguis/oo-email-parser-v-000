@@ -10,7 +10,7 @@ class EmailParser
     @emailarray = emails.tr(',','').split(" ")
     @newarray = []
     @emailarray.each do |addresses|
-      if newarray.include?(addresses)
+      if @newarray.include?(addresses)
         @newarray << addresses
       end
     end

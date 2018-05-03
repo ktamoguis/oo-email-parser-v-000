@@ -18,23 +18,11 @@ class EmailParser
       end
     end
     @newarray
-
   end
 
   def parse
     @newarray
   end
-
-
-
+  
 end
 
-
-
-emails = "avi@test.com, arel@test.com"
-
-parser = EmailParser.new(emails)
-
-binding.pry
-
-parser.parse

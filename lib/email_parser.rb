@@ -9,22 +9,18 @@ class EmailParser
     @emailarray = []
     @emailarray = emails.tr(',','').split(" ")
     @emailarray = removeduplicate(@emailarray)
+    @newarray = []
+    @emailarray.map do |addresses|
+      if newarray.include?(addresses)
+        @newarray << addresses
+      end
+    end
+    @newarray
+    
   end
 
   def parse
-    @emailarray
-  end
-
-  Private
-
-  def removeduplicate(emails)
-    newarray = []
-    emails.map do |addresses|
-      if newarray.include?(addresses)
-        newarray << addresses
-      end
-    end
-    newarray
+    @newarray
   end
 
 end

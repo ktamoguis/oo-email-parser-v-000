@@ -13,6 +13,7 @@ class EmailParser
     @newarray = []
     @emailarray.each do |addresses|
       if @newarray.include?(addresses)
+      else
         @newarray << addresses
       end
     end

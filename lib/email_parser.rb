@@ -8,7 +8,6 @@ class EmailParser
   def initialize(emails)
     @emailarray = []
     @emailarray = emails.tr(',','').split(" ")
-    @emailarray = removeduplicate(@emailarray)
     @newarray = []
     @emailarray.map do |addresses|
       if newarray.include?(addresses)
